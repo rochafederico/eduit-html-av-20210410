@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+</head>
+<body>
+    <canvas id="mi-canvas" height="400" width="800"></canvas>
+    <script>
+        var canvas = document.querySelector('#mi-canvas');
+        var contexto = canvas.getContext('2d');
+
+        contexto.strokeStyle = "#1976D2";
+        contexto.lineWidth = 5;
+        contexto.strokeRect(5,5,190, 90);
+
+        contexto.fillStyle = "#1976D2";
+        contexto.font = "24px 'Open Sans";
+        contexto.textAligb = "center";
+        contexto.fillText("Educación IT", 30, 60);
+    </script>
+</body>
+</html>
