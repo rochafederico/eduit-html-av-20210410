@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio/Video</title>
+</head>
+
+<body>
+    <video height="200" width="300">
+        <source src="https://www.w3schools.com/html/movie.ogg" type="audio/ogg">
+        <source src="https://www.w3schools.com/html/movie.mp4" type="audio/mp4">
+    </video>
+    <button id="play">
+        play
+    </button>
+    <button id="pausa">
+        pausar
+    </button>
+    <button id="bajar-volumen">
+        bajar volumen
+    </button>
+    <button id="subir-volumen">
+        subir volumen
+    </button>
+    <button id="mas-lento">
+        mas lento
+    </button>
+    <button id="mas-rapido">
+        mas rapido
+    </button>
+    <script>
+        var video = document.querySelector('video');
+
+        document.querySelector('#play').addEventListener('click', function () {
+            video.play();
+        })
+        document.querySelector('#pausa').addEventListener('click', function () {
+            video.pause();
+        })
+        document.querySelector('#bajar-volumen').addEventListener('click', function () {
+            if(video.volume > 0 && video.volume <= 1) {
+                video.volume -= 0.1;
+                // video.volume = video.volume - 0.1;
+            }
+            console.log(video.volume);
+        })
+        document.querySelector('#subir-volumen').addEventListener('click', function () {
+            if(video.volume > 0 && video.volume < 1) {
+                video.volume += 0.1;
+            }
+
+            console.log(video.volume);
+        })
+        document.querySelector('#mas-lento').addEventListener('click', function () {
+            if(video.playbackRate > 0 && video.playbackRate <= 1) {
+                video.playbackRate -= 0.1;
+            }
+            console.log(video.volume);
+        })
+        document.querySelector('#mas-rapido').addEventListener('click', function () {
+            if(video.playbackRate > 0) {
+                video.playbackRate += 0.1;
+            }
+
+            console.log(video.playbackRate);
+        })
+    </script>
+</body>
+
+</html>
