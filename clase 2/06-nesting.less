@@ -1,0 +1,31 @@
+// nav {
+// }
+// nav > ul {
+// }
+// nav > ul > li > a{
+// }
+// nav > ul a {
+// }
+
+nav {
+    background-color: red;
+    > ul {
+        border: 1px solid;
+        > li {
+            float: left;
+            > a {
+                color: blue;
+                &:hover {
+                    color: darken(blue, 20%);
+                }
+                &:active {
+                    color: darken(blue, 20%);
+                }
+
+                &::before {
+                    color: darken(blue, 20%);
+                }
+            }
+        }
+    }
+}

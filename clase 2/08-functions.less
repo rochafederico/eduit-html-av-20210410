@@ -1,0 +1,12 @@
+@color: red;
+@color-dark: darken(@color, 20%);
+@color-lin: l(@color, 20%);
+
+@color-dos: blue;
+@mezcla: average(@color, @color-dos);
+
+body {
+    // hls
+    @hue: hue(@mezcla);
+    background-color: hsl(@hue, 100%, 50%);
+}

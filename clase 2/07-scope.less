@@ -1,0 +1,21 @@
+@color: red; // global
+
+
+.mi-mixin(@color-param){ // local
+    
+};
+
+#page {
+    @color-page: blue; //Local
+    .mi-mixin(@color-page);
+
+    @color-page: red; //Local
+    
+}
+
+a {
+    &:hover{
+        color: @color-link;
+    }
+    @color-link: red;
+}

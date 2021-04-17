@@ -1,0 +1,12 @@
+#bottons() { 
+    .btn(@name, @color){
+        // @color-final: iscolor(@color, @color, #mixins.color-principal])
+        .btn-@{name} {
+            padding: 5px;
+            background-color: @color;
+            &:hover {
+                background-color: darken(@color, 25%);
+            }
+        }
+    }
+}

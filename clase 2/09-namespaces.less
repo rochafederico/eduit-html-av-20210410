@@ -1,0 +1,28 @@
+#mixins() {
+    color-principal: blue;
+    .btn(@name, @color){
+        // @color-final: iscolor(@color, @color, #mixins.color-principal])
+        .btn-@{name} {
+            background-color: @color;
+            &:hover {
+                background-color: darken(@color, 25%);
+            }
+        }
+    }
+}
+
+
+header {
+    #mixins.btn(login, #mixins[color-principal]);
+}
+
+// maps
+#colors() {
+    principal: red;
+    error: green;
+    info: blue;
+}
+
+#conig(){
+    colores: red blue green;
+}

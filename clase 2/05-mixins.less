@@ -1,0 +1,36 @@
+.border-negro {
+    border: 1px solid black;
+}
+
+.border-redondeado(@radius: 5px) {
+    border-radius: @radius;
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    -o-border-radius: @radius;
+    -ms-border-radius: @radius;
+}
+
+header {
+    .border-negro();
+    .border-redondeado();
+}
+
+nav {
+    .border-redondeado(10px);
+}
+
+.boton(@name, @color){
+    .btn-@{name} {
+        background-color: @color;
+        &:hover {
+            background-color: darken(@color, 25%);
+        }
+    }
+}
+
+nav {
+    .boton(botoncito, red);
+}
+
+
+.boton(otro-btn, blue);

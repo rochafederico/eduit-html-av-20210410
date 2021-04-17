@@ -1,0 +1,42 @@
+@width: 300px;
+@height: @width * 0.3;
+
+header {
+    width: @width;
+    height: @height
+}
+
+@link-color: #1e88e5;
+// @link-color: rgb(255,0,0);
+@link-color-hover: darken(@link-color, 50%);
+
+a {
+    color: @link-color;
+}
+a:hover {
+    color: @link-color-hover;
+}
+
+@uno: 'Titulo';
+@dos: 'unido';
+
+// ASI NO @texto: @uno + ' ' + @dos;
+@texto-template-string: '@{uno} asdjhfagsdjh asdjhagsd @{dos}';
+
+main > section::before {
+    content: @texto-template-string;
+}
+
+@url-images: "img/";
+body {
+    background-image: url("@{url-images}fondo.png");
+}
+
+@mi-selector: banner;
+
+.@{mi-selector} {
+    color: green;
+}
+
+
+@display: none;
