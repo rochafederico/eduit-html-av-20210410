@@ -1,0 +1,32 @@
+@mixin border-negro {
+    border: 1px solid black;
+    @include border-redondeado();
+}
+
+@mixin border-redondeado($radius: 5px) {
+    border-radius: $radius;
+}
+
+header {
+    @include border-negro();
+}
+
+nav {
+    @include border-redondeado(10px);
+}
+
+@mixin boton($name, $color){
+    .btn-#{$name} {
+        background-color: $color;
+        &:hover {
+            background-color: darken($color, 25%);
+        }
+    }
+}
+
+nav {
+    @include boton(botoncito, red);
+}
+
+
+@include boton(otro-btn, blue);

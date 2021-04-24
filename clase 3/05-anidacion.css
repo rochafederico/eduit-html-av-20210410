@@ -1,0 +1,18 @@
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main section {
+  width: 50%;
+}
+
+main section a {
+  color: blue;
+}
+
+main section a:hover {
+  color: red;
+}
+/*# sourceMappingURL=05-anidacion.css.map */

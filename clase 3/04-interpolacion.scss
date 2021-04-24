@@ -1,0 +1,12 @@
+$algo: "algo";
+
+.btn-#{$algo} {
+    color: red;
+}
+
+$display: flex;
+$poriedad: display;
+.btn {
+    #{$poriedad}: inline-#{$display};
+}
+

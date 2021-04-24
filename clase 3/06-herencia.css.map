@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAUA,AAVA,GAUG,CAAC,EAAE,CAVC;EACH,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,GAAG;CACtB;;AAOD,AALA,GAKG,CAAC,EAAE,CALc;EAEhB,OAAO,EAAE,GAAG;CACf",
+    "sources": [
+        "06-herencia.scss"
+    ],
+    "names": [],
+    "file": "06-herencia.css"
+}

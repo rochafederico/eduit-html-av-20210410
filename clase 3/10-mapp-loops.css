@@ -1,0 +1,28 @@
+a {
+  color: red;
+}
+
+a.principal {
+  color: red;
+}
+
+a.error {
+  color: green;
+}
+
+a.info {
+  color: blue;
+}
+
+.btn-principal {
+  background-color: red;
+}
+
+.btn-error {
+  background-color: green;
+}
+
+.btn-info {
+  background-color: blue;
+}
+/*# sourceMappingURL=10-mapp-loops.css.map */

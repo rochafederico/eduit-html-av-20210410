@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,SAAS,CAAK;EACV,KAAK,EAAE,GAAG;CACb;;AAID,AAAA,IAAI,CAAC;EACD,OAAY,EAAC,WAAC;CACjB",
+    "sources": [
+        "04-interpolacion.scss"
+    ],
+    "names": [],
+    "file": "04-interpolacion.css"
+}

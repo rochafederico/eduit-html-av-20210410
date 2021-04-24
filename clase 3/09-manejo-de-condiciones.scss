@@ -1,0 +1,17 @@
+@mixin leftRight($left, $right) {
+    @debug $left;
+    @debug $right;
+
+    // $left: if($left == left, "valor true", "valor false")
+    @if $left != left and $right != right {
+        @warn "Los varlores #{$left} y #{$right} no estan permitidos";
+        // @error "Los varlores #{$left} y #{$right} no estan permitidos";
+    }
+
+    left: $left;
+    right: $right;
+}
+
+.algo {
+    @include leftRight("sdasd", 12312);
+}

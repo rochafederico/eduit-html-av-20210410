@@ -1,0 +1,15 @@
+@function sumar($nuro1, $nro2){
+    @debug "numero 1 #{$nuro1}";
+    @debug "numero 2 #{$nro2}";
+    
+    $result: $nuro1 + $nro2;
+
+    @if $result > 10 {
+        @return 10;
+    }
+    @return $result;
+}
+
+.algo {
+    border-width: sumar(5,3);
+}

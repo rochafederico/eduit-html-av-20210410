@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAYA,AAAA,KAAK,CAAC;EACF,YAAY,EAAQ,CAAC;CACxB",
+    "sources": [
+        "08-functiones.scss"
+    ],
+    "names": [],
+    "file": "08-functiones.css"
+}

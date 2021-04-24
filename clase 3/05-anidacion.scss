@@ -1,0 +1,12 @@
+main {
+    display: flex;
+    section {
+        width: 50%;
+        a{
+            color: blue;
+            &:hover {
+                color: red;
+            }
+        }
+    }
+}

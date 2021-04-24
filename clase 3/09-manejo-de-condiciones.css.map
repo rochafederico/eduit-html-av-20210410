@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAcA,AAAA,KAAK,CAAC;EAJF,IAAI,EAKe,OAAO;EAJ1B,KAAK,EAIuB,KAAK;CACpC",
+    "sources": [
+        "09-manejo-de-condiciones.scss"
+    ],
+    "names": [],
+    "file": "09-manejo-de-condiciones.css"
+}

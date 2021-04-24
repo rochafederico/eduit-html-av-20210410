@@ -1,0 +1,23 @@
+$map: ("principal": red, "error": green, "info": blue);
+
+@debug map-get($map, "principal");
+a {
+    color: map-get($map, "principal");
+}
+
+@each $name, $var in $map {
+    a.#{$name} {
+        color: $var;
+    }   
+}
+@each $name, $var in $map {
+    .btn-#{$name} {
+        background-color: $var;
+    }   
+}
+
+// map.set($map, "principal", greenyellow);
+// map-merge($map, ("otro": 212));
+
+@debug map-get($map, "principal");
+

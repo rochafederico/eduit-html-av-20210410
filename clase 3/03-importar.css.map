@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,IAAI,CAAC;EACD,KAAK,EAAE,IAAI;CACd",
+    "sources": [
+        "03-importar.scss",
+        "_partial.scss"
+    ],
+    "names": [],
+    "file": "03-importar.css"
+}

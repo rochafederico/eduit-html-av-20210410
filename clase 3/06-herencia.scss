@@ -1,0 +1,13 @@
+%lista {
+    display: flex;
+    flex-direction: row;
+}
+
+%otro-tipo-de-lista {
+    @extend %lista;
+    padding: 5px;
+}
+
+nav ul {
+    @extend %otro-tipo-de-lista ;
+}

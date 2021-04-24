@@ -1,0 +1,10 @@
+.btn-algo {
+  color: red;
+}
+
+.btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+/*# sourceMappingURL=04-interpolacion.css.map */

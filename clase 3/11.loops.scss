@@ -1,0 +1,35 @@
+
+$columnas: 12;
+// for
+// @for $i from 1 to $columnas + 1 {
+//     .col-#{$i} {
+//         width: 100% / $columnas * $i;
+//     }
+// }
+
+$lista: red green blue;
+// @for $i from 1 to list-length($lista) {
+//     .col-#{$i} {
+//         width: 100% / $columnas * $i;
+//     }
+// }
+// @each $color in $lista {
+//     a.#{$color} {
+//         color: $color;
+//     }   
+// }
+
+@if true {
+    // condicion true
+}
+@else {
+    // condicion false
+}
+
+$count: 0;
+@while $count <= 10 {
+    .col-#{$count} {
+        width: 100% / $columnas * $count;
+    }
+    $count: $count + 1;
+}

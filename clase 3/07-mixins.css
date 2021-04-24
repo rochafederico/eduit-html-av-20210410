@@ -1,0 +1,25 @@
+header {
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+nav {
+  border-radius: 10px;
+}
+
+nav .btn-botoncito {
+  background-color: red;
+}
+
+nav .btn-botoncito:hover {
+  background-color: maroon;
+}
+
+.btn-otro-btn {
+  background-color: blue;
+}
+
+.btn-otro-btn:hover {
+  background-color: navy;
+}
+/*# sourceMappingURL=07-mixins.css.map */

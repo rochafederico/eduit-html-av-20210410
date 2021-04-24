@@ -1,0 +1,18 @@
+$variable-1: #f00 !default;
+$variable-2: "Algo";
+$variable-lista: red blue green;
+$variable-lista: "algo" "aotro algo";
+$variable-border: 1px solid $variable-1;
+
+$numero: 12312.232;
+
+.algo {
+    border: $variable-border;
+    border-color: red;
+}
+
+$variable-border: "asdas";
+
+.otroalgo {
+    border: $variable-border;
+}
