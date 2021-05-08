@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AAGA,AAAA,CAAC,CAAC;EACE,KAAK,EAJW,GAAG;CAKtB;;AAGG,AAAA,CAAC,AAAA,UAAU,CAAA;EACP,KAAK,EATO,GAAG;CAUlB;;AAFD,AAAA,CAAC,AAAA,MAAM,CAAI;EACP,KAAK,EATqB,KAAK;CAUlC;;AAFD,AAAA,CAAC,AAAA,KAAK,CAAK;EACP,KAAK,EAToC,IAAI;CAUhD;;AAGD,AAAA,cAAc,CAAA;EACV,gBAAgB,EAdJ,GAAG;CAelB;;AAFD,AAAA,UAAU,CAAI;EACV,gBAAgB,EAdU,KAAK;CAelC;;AAFD,AAAA,SAAS,CAAK;EACV,gBAAgB,EAdyB,IAAI;CAehD",
-    "sources": [
-        "10-mapp-loops.scss"
-    ],
-    "names": [],
-    "file": "10-mapp-loops.css"
-}
+{"version":3,"sourceRoot":"","sources":["10-mapp-loops.scss"],"names":[],"mappings":"AAMA;EACI;;;AAIA;EACI,OATF;;;AAQF;EACI,OATF;;;AAQF;EACI,OATF;;;AAaF;EACI,kBAdF;;;AAaF;EACI,kBAdF;;;AAaF;EACI,kBAdF","file":"10-mapp-loops.css"}

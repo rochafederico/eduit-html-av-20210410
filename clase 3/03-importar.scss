@@ -1,2 +1,7 @@
 @import 'partial';
 // @use 'partial';
+@use 'libreria';
+
+body {
+    content: libreria.$variable;
+}

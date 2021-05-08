@@ -1,4 +1,11 @@
-$map: ("principal": red, "error": green, "info": blue);
+@use "sass:map";
+@use "libreria";
+
+$map: (
+    "principal": red,
+    "error": green,
+    "info": blue
+);
 
 @debug map-get($map, "principal");
 a {
@@ -21,3 +28,9 @@ a {
 
 @debug map-get($map, "principal");
 
+$font-weights: ("regular": 400, "medium": 500, "bold": 700);
+
+@debug map.set($font-weights, "medium", 4500); // 500
+@debug map.get($font-weights, "extra-bold");
+@debug libreria.$variable;
+@debug map.get($font-weights, "medium");
