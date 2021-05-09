@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checbox</title>
+    <link rel="stylesheet" href="05-checkbox.css">
+</head>
+
+<body>
+    <button class="boton-menu" onclick="palancaMenu()">Menu</button>
+    <nav>
+        <ul>
+            <li><a href="">Enlace 1</a></li>
+            <li><a href="">Enlace 2</a></li>
+            <li><a href="">Enlace 3</a></li>
+            <li><a href="">Enlace 4</a></li>
+        </ul>
+    </nav>
+    <label class="checkbox">
+        <input type="checkbox">
+        <span></span>
+    </label>
+    <button data-colapable="contenido">Palanca colapsable</button>
+    <div id="contenido" class="colapsable" style="height: 0px;">
+        <div class="colapsable-contenedor">
+            <h1>Titulo</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum repellendus a debitis dolor sapiente maxime
+                deserunt suscipit exercitationem iure. Reprehenderit necessitatibus, tempore corporis vitae quod
+                praesentium esse voluptas ab at.</p>
+            <p>Laudantium accusamus, excepturi aut dolorem velit aspernatur voluptatem repellat asperiores vel
+                blanditiis explicabo ullam officiis atque ea a sed, unde debitis consequuntur vero ad. Enim tenetur
+                nulla quo nesciunt praesentium!</p>
+            <p>Consequatur corporis quia hic commodi, tempore eum delectus! Laboriosam quia rem eius sint quis quas,
+                nesciunt autem nostrum assumenda voluptas quos libero velit? Temporibus magnam est reprehenderit
+                delectus impedit totam.</p>
+            <p>Quisquam perferendis vitae repellendus asperiores reprehenderit, cumque natus eaque, perspiciatis quos
+                mollitia ullam ex sequi quas repellat voluptates rerum maiores saepe, nesciunt odit animi labore dolor?
+                Asperiores, neque? Sint, quibusdam.</p>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector('[data-colapable]').addEventListener('click', function () {
+            var idElemento = this.dataset.colapable;
+            var elementoColapsable = document.querySelector('#' + idElemento);
+
+            if (elementoColapsable.style.height == "0px") {
+                var alto = elementoColapsable.querySelector('.colapsable-contenedor').offsetHeight;
+                elementoColapsable.style.height = alto + "px";
+            } else {
+                elementoColapsable.style.height = "0px";
+            }
+        })
+
+
+        function palancaMenu() {
+            var navegacion = document.querySelector('nav');
+            if(navegacion.classList.contains('show')) {
+                navegacion.classList.remove('show')
+            } else {
+                navegacion.classList.add('show')
+            }
+            
+        }
+    </script>
+</body>
+
+</html>

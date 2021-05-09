@@ -1,0 +1,25 @@
+.cajita {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    border: 1px solid red;
+    background-color: red;
+}
+
+.cajita-transformada {
+    // margin-left: 500px;
+    background-color: rgba(0,255,0,.2);
+    // transform: translate(200px, 0) rotate(20deg);
+    transform: translateX(200px) rotate(90deg);
+    // func1 => func2 => func3
+
+    transform-origin: right bottom;
+    &:hover {
+
+        // transform: scale(1.2); // enteros o decimales
+        // transform: translateY(10px);
+        // transform: skewY(-20deg);
+        // transform: skewX(-20deg);
+        // transform: skew(-20deg, -20deg);
+    }
+}

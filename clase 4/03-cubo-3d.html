@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cubo 3D</title>
+    <link rel="stylesheet" href="03-cubo-3d.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="cubo">
+            <div class="cara arriba"></div>
+            <div class="cara abajo"></div>
+            <div class="cara izquierda"></div>
+            <div class="cara derecha"></div>
+            <div class="cara atras"></div>
+            <div class="cara adelante"></div>
+        </div>
+    </div>
+
+    <script>
+        var grado = 0;
+        setInterval(function () {
+            grado++;
+            document.querySelector('.cubo').style.transform = "translateZ(-600px) rotateY(" + grado + "deg)";
+            if (grado == 360) {
+                grado = 0;
+            }
+        }, 50)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+.cajita {
+    border: 2px solid red;
+    padding: 15px;
+
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+
+    // transition: background-color 10s; // ms= milisegundos s= segundos
+    // transition: all 2s; 
+    // valores= property duratiom function delay
+    // transition-timing-function: cubic-bezier(1, 0, 0, 1);
+    // transition-timing-function: ease-in-out;
+
+    // transition: background-color 1s, margin-left 1s;
+    transition-property: background-color, margin-left;
+    transition-duration: 1s, 1s;
+    transition-delay: 0s, 1s;
+
+    &:hover {
+        background-color: red;
+        margin-left: 200px;
+    }
+    &.activo {
+        background-color: green;
+    }
+}

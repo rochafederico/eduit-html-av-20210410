@@ -1,0 +1,15 @@
+.cajita {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  border: 1px solid red;
+  background-color: red;
+}
+
+.cajita-transformada {
+  background-color: rgba(0, 255, 0, 0.2);
+  transform: translateX(200px) rotate(90deg);
+  transform-origin: right bottom;
+}
+
+/*# sourceMappingURL=01-transformaciones.css.map */

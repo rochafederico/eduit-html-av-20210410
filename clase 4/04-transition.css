@@ -1,0 +1,19 @@
+.cajita {
+  border: 2px solid red;
+  padding: 15px;
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  transition-property: background-color, margin-left;
+  transition-duration: 1s, 1s;
+  transition-delay: 0s, 1s;
+}
+.cajita:hover {
+  background-color: red;
+  margin-left: 200px;
+}
+.cajita.activo {
+  background-color: green;
+}
+
+/*# sourceMappingURL=04-transition.css.map */

@@ -1,0 +1,57 @@
+.checkbox {
+  display: inline-block;
+  height: 38px;
+  width: 72px;
+  border-radius: 19px;
+  background-color: grey;
+  position: relative;
+}
+.checkbox > input {
+  opacity: 0;
+}
+.checkbox > input:checked + span {
+  background-color: greenyellow;
+  left: 38px;
+}
+.checkbox > span {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  background-color: white;
+  border-radius: 50%;
+  top: 4px;
+  left: 4px;
+  transition: all 0.5s ease-in-out;
+}
+
+.colapsable {
+  overflow: hidden;
+  transition: height 1s ease-in-out;
+}
+
+.boton-menu {
+  position: fixed;
+  right: 0;
+}
+
+nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 99;
+  background-color: greenyellow;
+  padding: 10px;
+  transform: rotateY(90deg);
+  transform-origin: left;
+  transition: all 1s ease-in-out;
+}
+nav.show {
+  transform: rotateY(0);
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+/*# sourceMappingURL=05-checkbox.css.map */

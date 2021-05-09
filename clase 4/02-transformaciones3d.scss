@@ -1,0 +1,20 @@
+.padre {
+    position: relative;
+
+    perspective: 1000px;
+
+    // perspective-origin: 200px 200px;
+}
+
+.cajita {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    border: 1px solid red;
+    background-color: red;
+
+    position: absolute;
+
+    transform: rotateX(40deg) rotateZ(20deg) translate(-300px);
+    // matrix
+}
