@@ -1,0 +1,66 @@
+$colores: green greenyellow yellow  red  #82A blue;
+
+svg {
+    position: absolute;
+    > path {
+        animation-name: cambiocolores;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        @for $i from 1 to 18 {
+            &:nth-child(#{$i}){
+                animation-delay: $i * .2s;
+            }
+        }
+    }
+}
+
+@keyframes cambiocolores {
+    0% {
+        fill: indigo;
+    }
+    @for $i from 1 through length($colores){
+        #{(100 / length($colores)) * $i}% {
+            fill: nth($colores, $i);
+        }
+    }
+}
+
+.cajita {
+    background-color: greenyellow;
+    border: 1px solid;
+    border-radius: 10px;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+
+    animation-name: moverAbajo;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-play-state: paused;
+    animation-iteration-count: infinite;
+}
+
+@keyframes moverAbajo {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(100px);
+    }
+}
+@keyframes moverArriba {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100px);
+    }
+}
+@keyframes moverIzquierda {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100px);
+    }
+}

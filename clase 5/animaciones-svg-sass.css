@@ -1,0 +1,123 @@
+svg {
+  position: absolute;
+}
+svg > path {
+  animation-name: cambiocolores;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+svg > path:nth-child(1) {
+  animation-delay: 0.2s;
+}
+svg > path:nth-child(2) {
+  animation-delay: 0.4s;
+}
+svg > path:nth-child(3) {
+  animation-delay: 0.6s;
+}
+svg > path:nth-child(4) {
+  animation-delay: 0.8s;
+}
+svg > path:nth-child(5) {
+  animation-delay: 1s;
+}
+svg > path:nth-child(6) {
+  animation-delay: 1.2s;
+}
+svg > path:nth-child(7) {
+  animation-delay: 1.4s;
+}
+svg > path:nth-child(8) {
+  animation-delay: 1.6s;
+}
+svg > path:nth-child(9) {
+  animation-delay: 1.8s;
+}
+svg > path:nth-child(10) {
+  animation-delay: 2s;
+}
+svg > path:nth-child(11) {
+  animation-delay: 2.2s;
+}
+svg > path:nth-child(12) {
+  animation-delay: 2.4s;
+}
+svg > path:nth-child(13) {
+  animation-delay: 2.6s;
+}
+svg > path:nth-child(14) {
+  animation-delay: 2.8s;
+}
+svg > path:nth-child(15) {
+  animation-delay: 3s;
+}
+svg > path:nth-child(16) {
+  animation-delay: 3.2s;
+}
+svg > path:nth-child(17) {
+  animation-delay: 3.4s;
+}
+
+@keyframes cambiocolores {
+  0% {
+    fill: indigo;
+  }
+  16.6666666667% {
+    fill: green;
+  }
+  33.3333333333% {
+    fill: greenyellow;
+  }
+  50% {
+    fill: yellow;
+  }
+  66.6666666667% {
+    fill: red;
+  }
+  83.3333333333% {
+    fill: #82A;
+  }
+  100% {
+    fill: blue;
+  }
+}
+.cajita {
+  background-color: greenyellow;
+  border: 1px solid;
+  border-radius: 10px;
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  animation-name: moverAbajo;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-play-state: paused;
+  animation-iteration-count: infinite;
+}
+
+@keyframes moverAbajo {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100px);
+  }
+}
+@keyframes moverArriba {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100px);
+  }
+}
+@keyframes moverIzquierda {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100px);
+  }
+}
+
+/*# sourceMappingURL=animaciones-svg-sass.css.map */

@@ -1,0 +1,61 @@
+.cajita {
+    border: 1px solid;
+    border-radius: 10px;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+
+    position: absolute;
+
+    animation-name: mi-aminacion;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 2s;
+
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+
+    animation-direction: alternate-reverse;
+
+    // animation: name duration timing-function delay interation-count direction fill-mode play-state;
+    // animation: mi-animacion 2s ease-in-out 2s infinite alternate both;
+}
+
+.pausado {
+    animation-play-state: paused;
+}
+
+@keyframes mi-aminacion {
+    from { //0%
+        background-color: blue;
+        border-color: red;
+        top: 0;
+    }
+    45% {
+        background-color: greenyellow;
+        border-width: 5px;
+        top: 200px;
+    }
+    to { // 100%
+        background-color: brown;
+        border-color: blue;
+        border-width: 1px;
+        top: 0;
+    }
+}
+
+svg > circle {
+    stroke: greenyellow;
+    stroke-width: 3px;
+    stroke-dasharray: 12px;
+    animation: circulo 1s linear 0s infinite;
+}
+
+@keyframes circulo {
+    0% {
+        stroke-dashoffset: 0px;
+    }
+    100% {
+        stroke-dashoffset: 100px;
+    }
+}

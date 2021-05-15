@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animaciones</title>
+    <link rel="stylesheet" href="animaciones.css">
+</head>
+<body>
+    <button onclick="palancaAnimacion()">Play/Pause</button>
+    <!-- <div class="cajita"></div> -->
+    <svg height="200" width="200">
+        <circle cx="100" cy="100" r="50" fill="black"></circle>
+    </svg>
+    <script>
+        function palancaAnimacion() {
+            var cajita = document.querySelector('.cajita');
+            // if(cajita.classList.contains('pausado')) {
+            //     cajita.classList.remove('pausado');
+            // } else {
+            //     cajita.classList.add('pausado');
+            // }
+            var playState = cajita.style.animationPlayState;
+            if(playState == '' || playState === 'running') {
+                cajita.style.animationPlayState = "paused";
+            } else {
+                cajita.style.animationPlayState = "running";
+            }
+        }
+    </script>
+</body>
+</html>
